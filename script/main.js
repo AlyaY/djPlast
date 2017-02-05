@@ -120,7 +120,6 @@ ymaps.ready(function() {
       iconLayout: 'default#image',
       iconImageHref: 'img/map-pin-blue.png',
       iconImageSize: [46, 64],
-.
       iconImageOffset: [-23, -64]
     });
   myMap.geoObjects.add(myPlacemark);
