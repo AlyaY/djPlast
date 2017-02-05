@@ -1,5 +1,5 @@
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
   $('section[data-type="background"]').each(function() {
     var $bgobj = $(this); // создаем объект
     $(window).scroll(function() {
