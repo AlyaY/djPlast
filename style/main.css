@@ -740,6 +740,11 @@ menu {
   margin-bottom: 52px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 520px) {
+  .main-screen__form {
+    margin: 0 auto 42px;
+  }
+}
 .form__title {
   width: 75%;
   max-width: 640px;
@@ -777,6 +782,11 @@ menu {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 420px) {
+  .form__input-wrap {
+    width: 95%;
   }
 }
 .form__input {
@@ -832,7 +842,7 @@ menu {
 }
 @media screen and (max-width: 420px) {
   .form__btn {
-    width: 98%;
+    width: 95%;
   }
 }
 .main-screen__list {
