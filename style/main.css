@@ -417,12 +417,14 @@ menu {
   left: 0;
   transition: 0.4s all ease-in;
 }
-@media screen and (max-width: 500px) {
-  .btn {
-    width: 90%;
-  }
+@media screen and (max-width: 520px) {
   .btn::before {
     display: none;
+  }
+}
+@media screen and (max-width: 340px) {
+  .btn {
+    width: 94%;
   }
 }
 .btn--dark {
@@ -777,11 +779,7 @@ menu {
 }
 @media screen and (max-width: 920px) {
   .form__input-wrap {
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: block;
   }
 }
 @media screen and (max-width: 420px) {
@@ -807,7 +805,8 @@ menu {
 }
 @media screen and (max-width: 920px) {
   .form__input {
-    min-width: 420px;
+    display: block;
+    max-width: 320px;
     width: 80%;
     margin: 0 auto;
   }
