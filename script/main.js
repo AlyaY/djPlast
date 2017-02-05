@@ -103,3 +103,28 @@ jQuery(document).ready(function() {
 
 
 });
+
+ymaps.ready(function() {
+  var myMap = new ymaps.Map("map", {
+      center: [55.712274, 37.690794],
+      zoom: 15,
+      controls: ['zoomControl']
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+    myPlacemark = new ymaps.Placemark([55.712274, 37.690794], {
+      balloonContent: 'GENERAL PLAST',
+      hintContent: 'г. Москва, м. Кожуховская, ул. Угрешская, д.2, строение 36, бизнес-центр «IQ-Park»'
+    }, {
+
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-pin-blue.png',
+      iconImageSize: [46, 64],
+.
+      iconImageOffset: [-23, -64]
+    });
+  myMap.geoObjects.add(myPlacemark);
+  myMap.controls.add('smallZoomControl');
+});
+
+ 
