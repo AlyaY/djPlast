@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>!!!!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="icon" type="image/png" href=""> -->
+  <link rel="stylesheet" href="style/main.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="script/maps.js" type="text/javascript"></script>
+  <script src="script/jquery.inputmask.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="header__btn">МЕНЮ</a>
+    <a href="#main" class="header__logo">CLEAF
+        <img src="img/logo.png" alt="CLEAF">
+      </a>
+    <nav class="header__nav header__nav--show">
+      <ul>
+        <li>
+          <a href="#main">Главная</a>
+        </li>
+        <li>
+          <a href="#plus">Преимущества</a>
+        </li>
+        <li>
+          <a href="#catalog">Каталог</a>
+        </li>
+        <li>
+          <a href="#stock">Акция</a>
+        </li>
+        <li>
+          <a href="#steps">Порядок работы</a>
+        </li>
+        <li>
+          <a href="#footer">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__contact">
+      <a href="tel:74957744006" class="header__tel">+7(495) 774 40 06</a>
+      <a href="#" class="header__href form-open-js">Заказать обратный звонок</a>
+      <a href="mailto:sales@hpl-decor.ru" class="header__email">sales@hpl-decor.ru</a>
+    </div>
+  </header>
+  <section id="main" data-type="background" data-speed="4" class="main-screen">
+    <div class="main-screen__wrap">
+    <div class="main-screen__contact">
+      <a href="tel:74957744006" class="header__tel">+7(495) 774 40 06</a>
+      <a href="#" class="header__href form-open-js">Заказать обратный звонок</a>
+      <a href="mailto:sales@hpl-decor.ru" class="header__email">sales@hpl-decor.ru</a>
+    </div>
+      <h1 class="main-screen__title">
+          <span class="main-screen__title--active">Более 80 декоров </span>TSS плит, пластик HPL, кромка ABS
+      </h1>
+      <p class="main-screen__dscr">Cамая полная складская программа в России</p>
+      <form action="" class="main-screen__form">
+        <h3 class="form__title"><span class="form__title--bold">Заполните форму и узнайте, </span>
+          <span class="form__title--active">сколько Вы сэканомите,</span> работая с нами
+        </h3>
+        <div class="form__input-wrap">
+          <input type="text" name="name" class="form__input form__input--name" placeholder="Как к Вам обращаться?">
+          <input type="phone" name="phone" class="form__input form__input--phone  mask" placeholder="Куда Вам перезвонить?">
+          <input type="email" name="email" class="form__input form__input--mail" placeholder="Куда нам написать?">
+        </div>
+        <button class="form__btn btn">Узнать стоимость</button>
+      </form>
+      <ul class="main-screen__list">
+        <li class="main-screen__item">
+          <div class="main-screen__num">01</div>
+          <p>Самая полная складская программа в РФ</p>
+        </li>
+        <li class="main-screen__item">
+          <div class="main-screen__num">02</div>
+          <p>В наличии кромка ABS ко всем декорам TSS и HPL</p>
+        </li>
+        <li class="main-screen__item">
+          <div class="main-screen__num">03</div>
+          <p>Доставка по всей территории России</p>
+        </li>
+        <li class="main-screen__item">
+          <div class="main-screen__num">04</div>
+          <p>Бесплатная доставка продукции CLEAF до транспортной компании </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="plus" id="plus">
+    <div class="plus__wrap">
+      <h2 class="plus__title">Преимущества продукции CLEAF</h2>
+      <article class="material">
+        <h1 class="material__title">Пластик HPL</h1>
+        <div class="material__block">
+          <p class="material__dscr"><strong>Пластики HPL </strong>используют там, где необходима <strong>повышенная прочность и износостойкость </strong>материала, которую не смогут обеспечить другие материалы. Это мебельные фасады, столешницы, стеновые панели
+          </p>
+          <ul class="material__list">
+            <li class="material__item">
+              <img src="img/durability-icon.png" alt="Износостойкость" class="material__img">
+              <h4 class="material__name">Износостойкость</h4>
+              <p class="material__expl">Срок годности изделий практически не ограничен. Привлекательный внешний вид сохраняется на протяжении всего срока эксплуатации</p>
+            </li>
+            <li class="material__item">
+              <img src="img/temperature-icon.png" alt="Термостойкость" class="material__img">
+              <h4 class="material__name">Термостойкость</h4>
+              <p class="material__expl">HPL не меняет своих характеристик в диапазоне температур от – 50 до +60 С</p>
+            </li>
+            <li class="material__item">
+              <img src="img/moisture-icon.png" alt="Влагостойкость" class="material__img">
+              <h4 class="material__name">Влагостойкость</h4>
+              <p class="material__expl">Не деформируется под воздействием влаги</p>
+            </li>
+            <li class="material__item">
+              <img src="img/combustibility-icon.png" alt="Трудногорючесть" class="material__img">
+              <h4 class="material__name">Трудногорючесть</h4>
+              <p class="material__expl">
+                Класс горючести материала Г1. При горении материал не разрушается, риск обвала конструкций минимален</p>
+            </li>
+            <li class="material__item">
+              <img src="img/vandal-proof-icon.png" alt="Антивандальность" class="material__img">
+              <h4 class="material__name">Антивандальность</h4>
+              <p class="material__expl">
+                Стойкость к ударам и царапинам. Материал неподвержен деформации под любым внешним воздействием</p>
+            </li>
+            <li class="material__item">
+              <img src="img/environmental-icon.png" alt="Экологичность" class="material__img">
+              <h4 class="material__name">Экологичность</h4>
+              <p class="material__expl">
+                Пластик не содержит и не выделяет вредных веществ даже при нагревании. При производстве материала используются компоненты, не образующие вредных паров, газов</p>
+            </li>
+            <li class="material__item">
+              <img src="img/ok-icon.png" alt="Наличие кромки ABS" class="material__img">
+              <h4 class="material__name">Наличие кромки ABS ко всем декорам</h4>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="plus__block material">
+        <h1 class="material__title">TSS плиты</h1>
+        <div class="material__block">
+          <p class="material__dscr">Технология производства плит TSS Cleaf является
+            <strong>ноу-хау</strong> и позволяет делать
+            <strong>глубокие виды тиснений </strong> с применением технологии производства декоративных бумажно-слоистых пластиков.
+          </p>
+          <p class="material__dscr">Основное преимущество TSS Cleaf – это
+            <strong>плиты с уникальным дизайном и неповторимыми тактильными ощущениями</strong>
+          </p>
+          <ul class="material__list">
+            <li class="material__item">
+              <img src="img/environmental-icon.png" alt="Экологичность" class="material__img">
+              <h4 class="material__name">Экологичность</h4>
+              <p class="material__expl">
+                класс эмиссии формальдегидов Е1</p>
+            </li>
+            <li class="material__item">
+              <span class="material__text">3D</span>
+              <h4 class="material__name">Синхронизированные декоры</h4>
+              <p class="material__expl">
+                (3D прессование)</p>
+            </li>
+            <li class="material__item">
+              <img src="img/depth-icon.png" alt="Глубина" class="material__img">
+              <h4 class="material__name">Глубина тиснения до 250мкм</h4>
+              <p class="material__expl">
+                (обычное ЛДСП – до 30мкм)</p>
+            </li>
+            <li class="material__item">
+              <img src="img/thickness-icon.png" alt="Толщина" class="material__img">
+              <h4 class="material__name">Толщина поверхностного слоя до 1,6мм</h4>
+              <p class="material__expl">
+                (обычное ЛДСП – 0,2мм)</p>
+            </li>
+            <li class="material__item">
+              <img src="img/vandal-proof-icon.png" alt="Прочность" class="material__img">
+              <h4 class="material__name">Прочность</h4>
+              <p class="material__expl">Высокая устойчивость к царапинам и ударопрочность</p>
+            </li>
+            <li class="material__item">
+              <span class="material__text">ДСП</span>
+              <h4 class="material__name">Основа из качественного ДСП</h4>
+              <p class="material__expl">(плотноть 700 кг/м.куб.)</p>
+            </li>
+            <li class="material__item">
+              <img src="img/ok-icon.png" alt="Наличие кромки ABS" class="material__img">
+              <h4 class="material__name">Наличие кромки ABS ко всем декорам</h4></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="catalog" id="catalog">
+    <h2 class="catalog__main-title">Каталог предоставляемой продукции CLEAF</h2>
+    <div class="catalog__btns">
+      <a href="#" class="catalog__btn catalog__btn--active">Пластик HPL</a>
+      <a href="#" class="catalog__btn  ">TSS плиты</a>
+      <a href="#" class="catalog__btn  ">Кромка ABS</a>
+    </div>
+    <p class="catalog__text  catalog__text--active">Формат 3050*1300, толщина 0,6 мм, постформинг</p>
+    <p class="catalog__text">Толщина 8мм и 18мм Формат 2800*2070мм</p>
+    <p class="catalog__text">Ширина 22 мм / 45 мм, толщина 1 мм</p>
+    <div class="catalog__list  catalog__list--active owl-carousel">
+      <div class="catalog__group-item">
+        <div class="catalog__item">
+          <img src="img/tss/AzimutTSS.png" alt="Azimut" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Azimut TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+        <div class="catalog__item">
+          <img src="img/tss/EngadinaTSS.png" alt="Engadin" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Engadina TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+      </div>
+      <div class="catalog__group-item">
+        <div class="catalog__item">
+          <img src="img/tss/MillenniumTSS.png" alt="Millennium" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Millennium TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+        <div class="catalog__item">
+          <img src="img/tss/PenelopeTSS.png" alt="PenelopeTSS" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Penelope TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+      </div>
+      <div class="catalog__group-item">
+        <div class="catalog__item">
+          <img src="img/tss/SherwoodTSS.png" alt="Sherwood" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Sherwood TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+        <div class="catalog__item">
+          <img src="img/tss/SpgatoTSS.png" alt="Spgato" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Spgato TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+      </div>
+      <div class="catalog__group-item">
+        <div class="catalog__item">
+          <img src="img/tss/SurfTSS.png" alt="Surf" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Surf TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+        <div class="catalog__item">
+          <img src="img/tss/TrancheTSS.png" alt="Tranche" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Tranche TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+      </div>
+      <div class="catalog__group-item">
+        <div class="catalog__item">
+          <img src="img/tss/YosemiteTSS.png" alt="Yosemite" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Yosemite TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+        <div class="catalog__item">
+          <img src="img/tss/PembrokeTSS.png" alt="Pembroke" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Pembroke TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+      </div>
+      <div class="catalog__group-item">
+        <div class="catalog__item">
+          <img src="img/tss/SculturaTSS.png" alt="Scultura" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Scultura TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+        <div class="catalog__item">
+          <img src="img/tss/AresTSS.png" alt="Ares" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Ares TSS</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+      </div>
+      <div class="catalog__group-item">
+        <div class="catalog__item">
+          <img src="img/tss/Tivoli.jpg" alt="Tivoli" class="catalog__img">
+          <div class="catalog__hover-block">
+            <h5 class="catalog__title">Tivoli</h5>
+            
+            <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog__list  owl-carousel">
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/B040 Smart.jpg" alt="B040 Smart" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">B040 Smart</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/FA33 Siviglia.jpg" alt="FA33 Siviglia" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">FA33 Siviglia</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/FA44 Penelope (в наличии TSS плита).jpg" alt="FA44 Penelope " class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">FA44 Penelope</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/FA48 Penelope.jpg" alt="FA48 Penelope" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">FA48 Penelope</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/FA58 Penelope.jpg" alt="FA58 Penelope" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">FA58 Penelope</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/FA66 Penelope.jpg" alt="FA66 Penelope.jpg" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">FA66 Penelope.jpg</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/FA85 Italian Stone.jpg" alt="FA85 Italian Stone" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">FA85 Italian Stone</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/FB11 Italian Stone  (в наличии TSS плита).jpg" alt="FB11 Italian Stone" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">FB11 Italian Stone</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/FB43  Italian Stone.jpg" alt="FB43  Italian Stone" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">FB43  Italian Stone</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/FB47  Italian Stone (в наличии TSS плита).jpg" alt="FB47  Italian Stone" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">FB47  Italian Stone</h5>
+        
+        <a href="#" class="catalog__btn-order">Заказать</a>
+      </div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/LK09 TopMatrix.jpg" alt="LK09 TopMatrix" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">LK09 TopMatrix</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/LK62 TopMatrix.jpg" alt="LK62 TopMatrix" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">LK62 TopMatrix</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/LM08 Tranche (в наличии TSS плита).jpg" alt="LM08 Tranche " class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">LM08 Tranche</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/LM12 Tranche (в наличии TSS плита).jpg" alt="LM12 Tranche" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">LM12 Tranche</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/LM14 TopMatrix.jpg" alt="LM14 TopMatrix" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">LM14 TopMatrix</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/LM37 TopMatrix.jpg" alt="LM37 TopMatrix" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">LM37 TopMatrix</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/LM62 TopMatrix.jpg" alt="LM62 TopMatrix" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">LM62 TopMatrix</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/LM63 TopMatrix.jpg" alt="LM63 TopMatrix" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">LM63 TopMatrix</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/S027 TopMatrix  (в наличии TSS плита).jpg" alt="S027 TopMatrix " class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">S027 TopMatrix </h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/S060 TopMatrix  (в наличии TSS плита).jpg" alt="S060 TopMatrix" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">S060 TopMatrix</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/S071 TopMatrix  (в наличии TSS плита).jpg" alt="S071 TopMatrix" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">S071 TopMatrix</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/U129 Siviglia.jpg" alt="U129 Siviglia" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">U129 Siviglia</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+  <div class="catalog__group-item">
+    <div class="catalog__item">
+      <img src="img/hpl/UA51 Supermatt.jpg" alt="UA51 Supermatt" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">UA51 Supermatt</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+    <div class="catalog__item">
+      <img src="img/hpl/UA93 Supermatt.jpg" alt="UA93 Supermatt" class="catalog__img">
+      <div class="catalog__hover-block">
+        <h5 class="catalog__title">UA93 Supermatt</h5>
+        
+        <a href="#" class="catalog__btn-order  form-open-js">Заказать</a></div>
+    </div>
+  </div>
+</div>
+    <div class="catalog__list  owl-carouse">
+       <div class="catalog__item">
+         <img src="img/abs" alt="" class="catalog__img">
+         <div class="catalog__hover-block">
+           <h5 class="catalog__title"></h5>
+           <a href="#" class="catalog__btn-order  form-open-js">Заказать</a>
+           </div>
+       </div>
+       <div class="catalog__item">
+         <img src="img/abs" alt="" class="catalog__img">
+         <div class="catalog__hover-block">
+           <h5 class="catalog__title"></h5>
+           <a href="#" class="catalog__btn-order  form-open-js">Заказать</a>
+           </div>
+       </div>
+     </div>
+  </section>
+  <section class="stock" id="stock">
+    <div class="stock__slide">
+      <h2 class="stock__title">При заказе от 3-х листов TSS -</h2>
+      <img src="img/stack-del.png" alt="акция" class="stock__img">
+      <!-- <div class="stock__text">акция</div> -->
+      <h2 class="stock__title"><small>доставка по Московской области в пределах 20 км от МКАД </small>бесплатно</h2>
+      <a href="" class="stock__btn btn btn--dark  form-open-js">Воспользоваться акцией</a>
+    </div>
+  </section>
+  <section class="steps" id="steps">
+    <h2 class="steps__title">Порядок работы</h2>
+    <ul class="steps__list">
+      <li class="steps__item">
+        <div class="steps__num">01</div>
+        <p class="steps__dscr">Вы заказываете обратный звонок, связываетесь по телефону или пишете на e-mail: sales@hpl-decor.ru
+        </p>
+        <a href="#" class="steps__btn  form-open-js">Заказать звонок</a>
+      </li>
+      <li class="steps__item">
+        <div class="steps__num">02</div>
+        <p class="steps__dscr">Мы обсуждаем Ваш заказ, Вы получаете счёт на оплату, который является подтверждением резерва товара на нашем складе</p>
+      </li>
+      <li class="steps__item">
+        <div class="steps__num">03</div>
+        <p class="steps__dscr">Оплачиваете счет по безналу или наличными прямо на складе</p>
+      </li>
+      <li class="steps__item">
+        <div class="steps__num">04</div>
+        <p class="steps__dscr">Приезжаете к нам на склад на 14-й км МКАД или заказываете услугу доставки
+        </p>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="footer__map" id="map">
+    </div>
+    <div class="footer__contact">
+      <h2 class="footer__title">Контактная информация</h2>
+      <address class="footer__address">
+        <p class="footer__tel"> +7 (495) 774 40 06
+          <br> +7 (495) 960 68 15</p>
+        <p class="footer__mail"> sales@hpl-decor.ru</p>
+        <p class="footer__ofice">Офис: г. Москва, м. Кожуховская, ул. Угрешская, д.2, строение 36, бизнес-центр «IQ-Park»</p>
+        <p class="footer__ofice">Адрес склада: 14-й км МКАД, Котельники, мкр. Белая дача, Коммерческий проезд, строение Е, складской комплекс «Технопром»</p>
+      </address>
+      <a href="http://hpl-decor.ru/catalog/tss-plita-cleaf/" class="footer__href">Перейти в интернет-магазин</a>
+      <img src="img/general-plast.jpg" alt="GENERAL PLAST" class="footer__logo">
+      <p class="footer__copyright">2012-2017. Все права защищены. Полное или частичное копирование материалов запрещено</p>
+    </div>
+  </footer>
+  <div class="pop-up pop-up--ok hide">
+    <h2 class="pop-up__title">Спасибо!</h2>
+    <p class="pop-up__dscr">наш менеджер свяжется с Вами в ближайшее время</p>
+    <a href="" class="pop-up__close-btn">закрыть</a>
+  </div>
+  <div class="pop-up pop-up--form hide">
+    <h2 class="pop-up__title  pop-up__title--small">Заполните форму,</h2>
+    <p class="pop-up__dscr">и наш менеджер свяжется с Вами в ближайшее время</p>
+    <form action="" class="pop-up__form">
+      <input type="text" name="name" class="pop-up__input pop-up__input--name" placeholder="Как к Вам обращаться?">
+      <input type="text" name="phone" class="pop-up__input pop-up__input--phone  mask" placeholder="Куда нам перезвонить?">
+      <input type="text" name="email" class="pop-up__input pop-up__input--mail" placeholder="Куда Вам написать?">
+      <button class="pop-up__btn btn">Свяжитесь со мной</button>
+    </form>
+    <a href="" class="pop-up__close-btn">закрыть</a>
+  </div>
+  <div class="pop-up__bg hide"></div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="script/owl.carousel.js"></script>
+<script src="script/jquery.inputmask.js" type="text/javascript"></script>
+<script>
+
+$(document).ready(function() {
+  $('section[data-type="background"]').each(function() {
+    var $bgobj = $(this); // создаем объект
+    $(window).scroll(function() {
+      var yPos = -($(window).scrollTop() / $bgobj.data('speed'));
+      var coords = 'center ' + yPos + 'px';
+      $bgobj.css({
+        backgroundPosition: coords
+      });
+    });
+  });
+  $(window).scroll(function() {
+    $('.header').toggleClass('header--bg', $(this).scrollTop() > 0);
+  });
+  $('.header__btn').click(function(event) {
+    event.preventDefault();
+    $(".header__nav").toggleClass('header__nav--show');
+  });
+
+  $('.form-open-js').click(function(event) {
+    event.preventDefault();
+    $(".pop-up--form").removeClass('hide');
+    $('.pop-up__bg').removeClass('hide');
+  });
+
+  $('.pop-up__close-btn').click(function(event) {
+    event.preventDefault();
+    $(this).parent().toggleClass('hide');
+    $('.pop-up__bg').toggleClass('hide');
+
+  });
+
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      400: {
+        items: 2,
+        nav: false
+      },
+      750: {
+        items: 3,
+        loop: true
+      },
+      1100: {
+        items: 4,
+        loop: false
+      }
+    }
+  });
+  $('.header__nav a').click(function() {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top - 74
+      }, 1000);
+      return false;
+    }
+  });
+  $('.catalog__btn').click(function(event) {
+    event.preventDefault();
+    var n;
+    var text = $('.catalog__text');
+    var btns = $('.catalog__btn');
+    var menu = $('.catalog__list');
+    for(var i = 0; i < btns.length; i++) {
+      btns.eq(i).removeClass('catalog__btn--active');
+      menu.eq(i).removeClass('catalog__list--active');
+      text.eq(i).removeClass('catalog__text--active');
+      if($(this).is(btns.eq(i))) {
+        n = i;
+      }
+    }
+    btns.eq(n).addClass('catalog__btn--active');
+    menu.eq(n).addClass('catalog__list--active');
+    text.eq(n).addClass('catalog__text--active');
+  });
+  $(window).scroll(function() {
+    if (stockBlock()) {
+      (function() {
+        $('.stock__slide').addClass('stock__slide--show');
+      })();
+    }
+  });
+
+
+  function stockBlock() {
+    var windowBottom = $(window).scrollTop() + $(window).height();
+    var blockBottom = $('.stock').offset().top + $('.stock').height();
+    return windowBottom >= blockBottom;
+  }
+
+  $(".mask").inputmask('+7 (999) 999 99 99');
+
+
+});
+</script>
+<script>
+</script>
+
+</html>
+<!-- (li.catalog__item>img.catalog__img[src=img/hpl/]+h5.catalog__title+p.catalog__dscr{постформинг, 3050*1300*0,6мм}+a.catalog__btn-order{Заказать})*24 -->
