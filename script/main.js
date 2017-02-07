@@ -24,6 +24,12 @@ jQuery(document).ready(function() {
     $('.pop-up__bg').removeClass('hide');
   });
 
+  $('pop-up-open-jss').click(function(event) {
+    event.preventDefault();
+    $(".pop-up--ok").removeClass('hide');
+    $('.pop-up__bg').removeClass('hide');
+  });
+
   $('.pop-up__close-btn').click(function(event) {
     event.preventDefault();
     $(this).parent().toggleClass('hide');
