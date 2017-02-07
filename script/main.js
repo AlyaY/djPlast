@@ -24,7 +24,7 @@ jQuery(document).ready(function() {
     $('.pop-up__bg').removeClass('hide');
   });
 
-  $('pop-up-open-jss').click(function(event) {
+  $('pop-up-open-js').click(function(event) {
     event.preventDefault();
     $(".pop-up--ok").removeClass('hide');
     $('.pop-up__bg').removeClass('hide');
