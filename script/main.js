@@ -1,5 +1,38 @@
+ymaps.ready(function() {
+  var myMap = new ymaps.Map("map", {
+      center: [55.712274, 37.690794],
+      zoom: 15,
+      controls: ['zoomControl']
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+    myPlacemark = new ymaps.Placemark([55.712274, 37.690794], {
+      balloonContent: 'GENERAL PLAST',
+      hintContent: 'г. Москва, м. Кожуховская, ул. Угрешская, д.2, строение 36, бизнес-центр «IQ-Park»'
+    }, {
+
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-pin.png',
+      iconImageSize: [46, 64],
+      iconImageOffset: [-23, -64]
+    });
+  myMap.geoObjects.add(myPlacemark);
+  myMap.controls.add('smallZoomControl');
+
+/*   myPlacemark.events
+        .add('mouseenter', function (e) {
+            // Ссылку на объект, вызвавший событие,
+            // можно получить из поля 'target'.
+            myPlacemark.get('target').options.set('iconImageHref','img/map-pin-blue.png');
+        })
+        .add('mouseleave', function (e) {
+            myPlacemark.get('target').options.set('iconImageHref','img/map-pin.png');
+        });*/
+});
+
 
 jQuery(document).ready(function() {
+
   $('section[data-type="background"]').each(function() {
     var $bgobj = $(this); // создаем объект
     $(window).scroll(function() {
@@ -46,7 +79,7 @@ jQuery(document).ready(function() {
     responsive: {
       0: {
         items: 1,
-        nav: false
+        nav: true
       },
       400: {
         items: 2,
@@ -63,6 +96,9 @@ jQuery(document).ready(function() {
     }
   });
   $('.header__nav a').click(function() {
+    if (!$(".header__nav").hasClass('header__nav--show')) {
+      $(".header__nav").toggleClass('header__nav--show');
+    }
     var target = $(this.hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
     if (target.length) {
@@ -78,11 +114,11 @@ jQuery(document).ready(function() {
     var text = $('.catalog__text');
     var btns = $('.catalog__btn');
     var menu = $('.catalog__list');
-    for(var i = 0; i < btns.length; i++) {
+    for (var i = 0; i < btns.length; i++) {
       btns.eq(i).removeClass('catalog__btn--active');
       menu.eq(i).removeClass('catalog__list--active');
       text.eq(i).removeClass('catalog__text--active');
-      if($(this).is(btns.eq(i))) {
+      if ($(this).is(btns.eq(i))) {
         n = i;
       }
     }
@@ -110,7 +146,9 @@ jQuery(document).ready(function() {
 
 });
 
-ymaps.ready(function() {
+
+ 
+/*ymaps.ready(function() {
   var myMap = new ymaps.Map("map", {
       center: [55.712274, 37.690794],
       zoom: 15,
@@ -124,12 +162,20 @@ ymaps.ready(function() {
     }, {
 
       iconLayout: 'default#image',
-      iconImageHref: 'img/map-pin.png',
+      iconImageHref: '../img/map-pin.png',
       iconImageSize: [46, 64],
       iconImageOffset: [-23, -64]
     });
-  myMap.geoObjects.add(myPlacemark);
   myMap.controls.add('smallZoomControl');
-});
+myMap.geoObjects.add(myPlacemark);
+    myPlacemark.events
+        .add('mouseenter', function (e) {
+            // Ссылку на объект, вызвавший событие,
+            // можно получить из поля 'target'.
+            myPlacemark.get('target').options.set('iconImageHref','../img/map-pin-blue.png');
+        })
+        .add('mouseleave', function (e) {
+            myPlacemark.get('target').options.set('iconImageHref','../img/map-pin.png');
+        });
 
- 
+});*/
