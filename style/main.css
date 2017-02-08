@@ -906,6 +906,7 @@ menu {
 .main-screen__num {
   font: normal 3rem/0.5 'Intro', Arial, sans-serif;
   color: rgba(255, 102, 0, 0.4);
+  min-width: 64px;
   /* color:  rgba(255, 102, 0, .5); */
   padding-bottom: 10px;
   padding-right: 10px;
@@ -1574,7 +1575,7 @@ menu {
 }
 @media screen and (max-width: 400px) {
   .footer__map {
-    height: 40vh;
+    height: 400px;
   }
 }
 .footer__contact {
@@ -1696,6 +1697,21 @@ menu {
 @media screen and (max-width: 1200px) {
   .footer__copyright {
     width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer__map .ymaps-map {
+    height: 400px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer__map#map {
+    height: 400px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer__contact {
+    margin-top: -300px;
   }
 }
 .footer__map:hover .ymaps-image {
