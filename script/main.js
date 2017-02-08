@@ -1,36 +1,3 @@
-ymaps.ready(function() {
-  var myMap = new ymaps.Map("map", {
-      center: [55.712274, 37.690794],
-      zoom: 15,
-      controls: ['zoomControl']
-    }, {
-      searchControlProvider: 'yandex#search'
-    }),
-    myPlacemark = new ymaps.Placemark([55.712274, 37.690794], {
-      balloonContent: 'GENERAL PLAST',
-      hintContent: 'г. Москва, м. Кожуховская, ул. Угрешская, д.2, строение 36, бизнес-центр «IQ-Park»'
-    }, {
-
-      iconLayout: 'default#image',
-      iconImageHref: 'img/map-pin.png',
-      iconImageSize: [46, 64],
-      iconImageOffset: [-23, -64]
-    });
-  myMap.geoObjects.add(myPlacemark);
-  myMap.controls.add('smallZoomControl');
-
-/*   myPlacemark.events
-        .add('mouseenter', function (e) {
-            // Ссылку на объект, вызвавший событие,
-            // можно получить из поля 'target'.
-            myPlacemark.get('target').options.set('iconImageHref','img/map-pin-blue.png');
-        })
-        .add('mouseleave', function (e) {
-            myPlacemark.get('target').options.set('iconImageHref','img/map-pin.png');
-        });*/
-});
-
-
 jQuery(document).ready(function() {
 
   $('section[data-type="background"]').each(function() {
@@ -145,15 +112,11 @@ jQuery(document).ready(function() {
 
 
 });
-
-
- 
-/*ymaps.ready(function() {
+ymaps.ready(function() {
   var myMap = new ymaps.Map("map", {
       center: [55.712274, 37.690794],
-      zoom: 15,
-      controls: ['zoomControl']
-    }, {
+      zoom: 15
+        }, {
       searchControlProvider: 'yandex#search'
     }),
     myPlacemark = new ymaps.Placemark([55.712274, 37.690794], {
@@ -162,20 +125,10 @@ jQuery(document).ready(function() {
     }, {
 
       iconLayout: 'default#image',
-      iconImageHref: '../img/map-pin.png',
+      iconImageHref: 'img/map-pin.png',
       iconImageSize: [46, 64],
       iconImageOffset: [-23, -64]
     });
-  myMap.controls.add('smallZoomControl');
-myMap.geoObjects.add(myPlacemark);
-    myPlacemark.events
-        .add('mouseenter', function (e) {
-            // Ссылку на объект, вызвавший событие,
-            // можно получить из поля 'target'.
-            myPlacemark.get('target').options.set('iconImageHref','../img/map-pin-blue.png');
-        })
-        .add('mouseleave', function (e) {
-            myPlacemark.get('target').options.set('iconImageHref','../img/map-pin.png');
-        });
-
-});*/
+    myMap.controls.add('smallZoomControl', {left: 5, top: 170});
+  myMap.geoObjects.add(myPlacemark);
+});
