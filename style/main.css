@@ -1556,7 +1556,7 @@ menu {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   width: 49%;
   min-height: 710px;
 }
@@ -1574,7 +1574,7 @@ menu {
 }
 @media screen and (max-width: 400px) {
   .footer__map {
-    height: 50vh;
+    height: 40vh;
   }
 }
 .footer__contact {
@@ -1707,28 +1707,6 @@ menu {
 .ymaps-glass-pane.ymaps-events-pane {
   background: rgba(255, 102, 0, 0.64) !important;
 }
-/* .footer__map:hover .ymaps-2-1-47-image {
-  background-image: url('../img/map-pin-blue.png') !important;
-}
-
-.footer__map:hover .ymaps-2-1-47-events-pane.ymaps-2-1-47-user-selection-none {
-  background: none !important;
-}
-
-.ymaps-2-1-47-events-pane.ymaps-2-1-47-user-selection-none {
-    background: rgba(255, 102, 0, .64) !important;
-} */
-/* #map:hover .ymaps-image {
-  background-image: url(../images/marker-hover.png) !important;
-}
-
-#map:hover .ymaps-glass-pane.ymaps-events-pane {
-  background: none !important;
-}
-
-.ymaps-glass-pane.ymaps-events-pane {
-    background: rgba(2, 79, 255, 0.64) !important;
-} */
 .pop-up {
   z-index: 9999;
   position: fixed;
